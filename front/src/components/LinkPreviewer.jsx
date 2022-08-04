@@ -49,9 +49,10 @@ const LinkPreviewer = () => {
                     </label>
                     <div className="mt-4 flex items-end flex-col">
                         <textarea
+                            placeholder="https://www.youtube.com/watch?v=JEwokvSQK4o"
                             data-testid="linkInput"
                             onChange={handleTextChange}
-                            className="w-full resize-none p-4 focus:outline-primary"
+                            className="w-full resize-none p-4 focus:outline-primary border"
                             type="text"
                             id="linkInput"
                             rows={3}

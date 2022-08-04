@@ -3,7 +3,7 @@ import React from 'react';
 const Nav = () => {
     return (
         <nav className="bg-white py-6">
-            <div className="container mx-auto px-4">
+            <div className="container mx-auto px-4 flex items-center justify-between">
                 <a href="/">
                     <svg
                         width="93"
@@ -20,6 +20,9 @@ const Nav = () => {
                             fill="#3F3F3F"
                         />
                     </svg>
+                </a>
+                <a href="https://github.com/codersgyan/link-previewer-nodejs" target="_blank" rel="noreferrer" className="text-black font-bold border-b border-primary">
+                    Check code
                 </a>
             </div>
         </nav>
