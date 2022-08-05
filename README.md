@@ -7,10 +7,7 @@ When you add a URL to an email message on Whatsapp or Instagram app, or when you
 ## Project Screen Shot(s)
 
 #### Example:   
-
-[ PRETEND SCREEN SHOT IS HERE ]
-
-[ PRETEND OTHER SCREEN SHOT IS HERE ]
+![Link previewer mockup](https://github.com/codersgyan/link-previewer-nodejs/blob/main/Mockup.png)
 
 ## Installation and Setup Instructions
 
@@ -71,9 +68,5 @@ REACT_APP_API_URL=http://localhost:5500
 ## Reflection
 
   - This project was taken as a challenge build hosted by FindCoder portal by iNeuron.
-  - What did you set out to build?
-  - Why was this project challenging and therefore a really good learning experience?
-  - What were some unexpected obstacles?
-  - What tools did you use to implement this project?
-      - This might seem obvious because you are IN this codebase, but to all other humans now is the time to talk about why you chose webpack instead of create react app, or D3, or vanilla JS instead of a framework etc. Brag about your choices and justify them here.  
+  - This project was really challenging because i had to manage parse the meta information from third party websites.
 
