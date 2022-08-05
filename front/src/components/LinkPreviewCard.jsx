@@ -12,7 +12,7 @@ const LinkPreviewCard = ({ meta, loading, link, error }) => {
                     <Error error={error} />
 
                     {meta && !loading && (
-                        <div className="flex items-start gap-8">
+                        <div className="flex flex-col sm:flex-row items-start gap-8">
                             <img
                                 className="h-24"
                                 src={meta.image}
