@@ -21,7 +21,11 @@ const Nav = () => {
                         />
                     </svg>
                 </a>
-                <a href="https://github.com/codersgyan/link-previewer-nodejs" target="_blank" rel="noreferrer" className="text-black font-bold border-b border-primary">
+                <a
+                    href="https://github.com/codersgyan/link-previewer-nodejs"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-black font-bold border-b border-primary">
                     Check code
                 </a>
             </div>
