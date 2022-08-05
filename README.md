@@ -1,6 +1,6 @@
 ## Link previewer
 
-#### What is Link Preview?:
+#### What is Link Preview?
 
 When you add a URL to an email message on Whatsapp or Instagram app, or when you receive an email message with a URL in the body, you'll see a rich preview that includes a link title, thumbnail image, and description of the link.
 
