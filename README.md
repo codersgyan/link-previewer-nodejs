@@ -4,9 +4,9 @@
 
 When you add a URL to an email message on Whatsapp or Instagram app, or when you receive an email message with a URL in the body, you'll see a rich preview that includes a link title, thumbnail image, and description of the link.
 
-### Demo link: https://link-previewer.codersgyan.com/
+#### Demo link: https://link-previewer.codersgyan.com/
 
-### Figma design link: https://www.figma.com/file/dSto38VGrrLAyRoDzbnVh0/Link-previewer?node-id=0%3A1
+#### Figma design link: https://www.figma.com/file/dSto38VGrrLAyRoDzbnVh0/Link-previewer?node-id=0%3A1
 
 ## Project Screen Shot(s)
 
