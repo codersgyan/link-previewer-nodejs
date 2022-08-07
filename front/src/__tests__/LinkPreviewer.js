@@ -1,7 +1,12 @@
-import { fireEvent, render, screen, waitFor } from '@testing-library/react';
+import {
+    fireEvent,
+    render,
+    screen,
+    waitFor,
+    act,
+} from '@testing-library/react';
 import LinkPreviewer from '../components/LinkPreviewer';
 import mockAxios from 'axios';
-import { act } from 'react-dom/test-utils';
 
 describe('LinkPreviewer component', () => {
     it('Should render the textarea box', () => {
@@ -51,25 +56,24 @@ describe('LinkPreviewer component', () => {
 
     it('should show error message if received error from server', async () => {
         const message = 'Network Error';
-        mockAxios.get.mockRejectedValueOnce(new Error(message));
+        const promise = Promise.reject(message);
+        mockAxios.get.mockImplementationOnce(() => promise);
 
         render(<LinkPreviewer />);
+
         const btnElm = screen.getByTestId('readyBtn');
         const textAreaElm = screen.getByTestId('linkInput');
-        act(() => {
-            fireEvent.change(textAreaElm, {
-                target: {
-                    value: 'https://www.youtube.com/watch?v=JEwokvSQK4o',
-                },
-            });
+        fireEvent.change(textAreaElm, {
+            target: {
+                value: 'https://www.youtube.com/watch?v=JEwokvSQK4o',
+            },
         });
+        fireEvent.click(btnElm);
 
-        act(() => {
-            fireEvent.click(btnElm);
+        await waitFor(() => {
+            expect(screen.queryByTestId('linkTitle')).toBeNull();
+            expect(screen.getByTestId('errorSpan')).toBeInTheDocument();
         });
-
-        expect(screen.queryByTestId('linkTitle')).not.toBeInTheDocument();
-        expect(screen.getByTestId('errorSpan')).toBeInTheDocument();
     });
 
     it('should not call server if textarea is empty', () => {

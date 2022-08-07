@@ -20,7 +20,6 @@ const LinkPreviewer = () => {
             const response = await fetchMeta(link);
             setMeta(() => response.data);
         } catch (err) {
-            console.error(err);
             setError(() => 'Meta is not available, Try again later 🤓');
         } finally {
             setLoading(() => false);
